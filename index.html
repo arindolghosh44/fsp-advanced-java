@@ -171,41 +171,41 @@ Royal Brand
             </div>
 
             <div class="contact_form">
-                <form>
-                    <input type="text" placeholder="FirstName">
-                    <input type="text" placeholder="LastName">
+                <form   id="myform" onsubmit="return(validate())"  >
+                    <input type="text" name="firstname" placeholder="FirstName">
+                    <input type="text" name="lastname" placeholder="LastName">
                     <br><br>
-                    <input type="email" placeholder="Enter Email">
-                    <input type="number" placeholder="Enter Number">
+                    <input type="email" name="emailAdd" placeholder="Enter Email">
+                    <input type="number" name="mobile" placeholder="Enter Number">
                     <br><br>
-                    <textarea></textarea>
+                    <textarea  name="address" ></textarea>
                     <br><br>
-                    <select>
+                    <select name="department" value="">
                     <option selected>Department</option>
-                    <option>IT</option>
-                    <option>CSBS</option>
-                    <option>AIML</option>
-                    <option>CSE</option>
+                    <option value="IT" >IT</option>
+                    <option value="CSBS">CSBS</option>
+                    <option value="AIML">AIML</option>
+                    <option value="CSE">CSE</option>
                     
                     
                     </select>
                     
-                    <select>
+                    <select name="gender" value="">
                         <option selected>Gender</option>
-                        <option>Boys</option>
-                        <option>Girls</option>
-                        <option>Other</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
                        
                         
                         
                         </select>
                         <br><br>
-                        <button type="submit">Registration</button>
+                        <input type="submit" value="Register"></input>
                    
                     
                     </form>
                     
-                    
+                    <script  src="script.js" ></script>
                     
       
         
